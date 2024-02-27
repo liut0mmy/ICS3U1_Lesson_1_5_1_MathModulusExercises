@@ -7,7 +7,17 @@ class Hours extends ConsoleProgram {
   
   public void run() {
     
-    // start coding here
-    
+    // Declare variables
+    double dblHours;
+    double dblDays;
+
+    // Get the amount of hours
+    dblHours = readDouble("Enter the amount of hours: ");
+
+    // Caclculate the amount of days
+    dblDays = (dblHours%24);
+
+    // Output the results
+    System.out.println("The amount of hours left is: " + dblDays);
   }
 }
